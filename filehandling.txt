@@ -1,0 +1,10 @@
+with open('string.txt', 'r') as f:
+    for l in f:
+        sp = l.split(',')
+        print(sp)
+    f = open('file1.txt', 'w')
+f.write(sp[0])
+f.close()
+t = open('file2.txt', 'w')
+t.write(sp[1])
+t.close()
