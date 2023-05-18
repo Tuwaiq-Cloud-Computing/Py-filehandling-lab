@@ -4,7 +4,7 @@ import io
 #Read from the file and assign it's content to a string
 
 with io.open("string.txt", 'r', encoding='utf-8') as f:
-    str = f.read().rstrip()
+    str = f.read()
     f.close
     print(str)
 
