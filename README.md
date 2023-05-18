@@ -16,6 +16,8 @@ In python do the following:
 - Take two substrings 
 - Take each substring and wirte it into a differnt "part_(number).txt" file 
 - Output: part_1.txt, part_2.txt, each one having a different part (substring) of the string
+
+
 def split_string_into_parts(filename):
     with open(filename, 'r') as file:
         content = file.read()
@@ -28,9 +30,6 @@ def split_string_into_parts(filename):
             part_file.write(part)
 
         print(f"Created {part_filename} with content: {part.strip()}")
-
-
-
 split_string_into_parts("string.txt")
 
 ## Submission:
