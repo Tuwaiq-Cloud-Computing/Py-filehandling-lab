@@ -17,6 +17,17 @@ In python do the following:
 - Take each substring and wirte it into a differnt "part_(number).txt" file 
 - Output: part_1.txt, part_2.txt, each one having a different part (substring) of the string
 
+fileA = open("/Users/amal/Desktop/string.txt")
+string= fileA.read()
+fileA.close()
+s1=string[:int(len(string)/2)]
+s2=string[int(len(string)/2):]
+part_1=open("/Users/amal/Desktop/part_1.txt")
+part_2=open("/Users/amal/Desktop/part_2.txt")
+part_1.write(s1)
+part_2.write(s2)
+part_1.close()
+part_2.close()
 
 ## Submission:
 
