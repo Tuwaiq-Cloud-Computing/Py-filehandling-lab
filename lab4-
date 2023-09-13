@@ -1,0 +1,33 @@
+# Read from the file and assign it's content to a string
+file_txt = open("string.txt","r")
+txt_read = file_txt.read()
+print("Original text from string.txt file: ", txt_read)
+
+
+# Take two substrings
+comma_delim = txt_read.split(", ")
+sub_str1 = comma_delim[0]
+sub_str2 = comma_delim[1]
+print("sub string 1: ", sub_str1)
+print("sub string 2: ", sub_str2)
+
+# Take each substring and wirte it into a differnt "part_(number).txt" file
+file_part_1 = open("part_1.txt","w")
+txt_write_part_1 = file_part_1.write(sub_str1)
+
+file_part_2 = open("part_2.txt","w")
+txt_write_part_2 = file_part_2.write(sub_str2)
+
+# Output: part_1.txt, part_2.txt, each one having a different part (substring) of the string
+# read the text in each file, part_1.txt and part_2.txt
+file_part1_read = open("part_1.txt","r")
+txt_read_part1 = file_part1_read.read()
+print("Text in part_1.txt file: ", txt_read_part1)
+
+file_part2_read = open("part_2.txt","r")
+txt_read_part2 = file_part2_read.read()
+print("Text in part_2.txt file: ", txt_read_part2)
+
+# file_txt.close()
+# file_part_1.close()
+# file_part_2.close()
